@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Arial";
+    margin: 0;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0
+}
+
+.list-reset {
+    list-style-type: none;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+h2,
+h2,
+h4 {
+    margin: 0;
+}
+
+button {
+    position: relative;
+    color: inherit;
+    border-radius: 15px;
+    padding: 7px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.Notification {
+    color: aliceblue;
+    position: absolute;
+    padding: 3px;
+    top: -7px;
+    width: 25px;
+    height: 25px;
+    background-color: brown;
+    border-radius: 15px;
+}
+
