@@ -123,10 +123,13 @@ function Regist(props) {
                             <Option value="Женщина">Женщина</Option>
                         </Select>
                         <Select required={true} placeholder="Факультет" onChange={(event, newValue) => { setFaculty(newValue) }}>
-                            <Option value="ФГИиБ">ФГИиБ</Option>
+                            <Option value="ФГиИБ">ФГиИБ</Option>
                             <Option value="ФОП">ФОП</Option>
                             <Option value="КФ">КФ</Option>
-                            <Option value="ПГ">ПГ</Option>
+                            <Option value="ГФ">ГФ</Option>
+                            <Option value="ФУТ">ФУТ</Option>
+                            <Option value="ЗФ">ЗФ</Option>
+                            <Option value="ФАиГ">ФАиГ</Option>
                         </Select>
                         <Select
                             multiple
@@ -158,9 +161,11 @@ function Regist(props) {
                             }}
                         >
                             <Option value="Вектор">Вектор</Option>
-                            <Option value="Спортклуб">Спортклуб</Option>
+                            <Option value="Спорт-клуб">Спорт-клуб</Option>
                             <Option value="Турклуб">Турклуб</Option>
-                            <Option value="Продакшн">Продакшн</Option>
+                            <Option value="МИИГАиК Продакшн">МИИГАиК Продакшн</Option>
+                            <Option value="Иностранные студенты">Иностранные студенты</Option>
+                            <Option value="Центр студенческих инициатив">Центр студенческих инициатив</Option>
                         </Select>
                         <Textarea
                             onChange={(e) => { setAbout(e.target.value) }}
@@ -178,6 +183,8 @@ function Regist(props) {
                         }} type="file" placeholder="Выберите фотографию" />
                         <Button type="submit" disabled={!flagCaptcha} onClick={sendData}>Зарегистрироваться</Button>
                     </FormAuth >
+                <p style={{fontSize: "14px", margin: "10px"}}>Нажимая на кнопку "Зарегистрироваться", я даю свое согласие на обработку и передачу моих Персональных данных, указанных выше, в соответствии с Федеральным законом от 27.07.2006 №152-ФЗ "О персональных данных".
+                </p> <p  style={{fontSize: "14px", margin: "10px"}}> Я подтверждаю, что, давая такое согласие, я действую по собственной воле и в своих интересах.</p>
                 </ContainerAuth>
                 <ContainerCaptha>
                     <Recaptcha

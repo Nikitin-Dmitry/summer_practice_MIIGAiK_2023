@@ -46,18 +46,18 @@ function Likes() {
                 {UsersForLike.lenght != 0 && !!UsersForLike && UsersForLike[0] != null
                     ? UsersForLike.map((el => {
                         return <ContainerLikesUser>
-                            <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614344178_47-p-chelovek-na-svetlom-fone-51.jpg" alt="" srcset="" style={{ height: "max-content" }} />
+                            <img src={el.ImgUrl} alt="" srcset="" style={{ height: "max-content" }} />
 
                             <NameLike>{el.Name}</NameLike>
                             <LeftBtn>
-                                <img src="https://img.icons8.com/?size=256&id=RFB1w7mlgenN&format=png" alt="Не нравится" srcset="" style={{ width: "45px", height: "45px", margin: "0px" }} />
+                                <img src="https://psv4.userapi.com/c909218/u436718231/docs/d19/93d7e5487c3d/deny1.png?extra=r4mKDCBw_hkq2QA1eD3zYZ_T7sSJkOgNjLPXM_T5TSf17MFqg_YV9iXXZNXIcaOEAG_lGC7TlxQy-IPneOxk5469GLqo6PJxl1U1_Do3DqVL3_MuCDkF-Gnfs13PjDPT_8D1aigPDPxWkYTYyoatdIw2" alt="Не нравится" srcset="" style={{ width: "45px", height: "40px", margin: "0px" }} />
                             </LeftBtn>
                             <RightBtn onClick={() => {
                                 like(el._id)
                                 alert(`Телеграмм для продолжения общения: ${el.Login}`)
                             }}
                             >
-                                <img src="https://img.icons8.com/?size=256&id=oEc1O2tvXKUb&format=png" alt="Нравится" srcset="" style={{ width: "45px", height: "45px", margin: "0px" }} />
+                                <img src="https://psv4.userapi.com/c909218/u436718231/docs/d46/e5c60d09c638/allow1.png?extra=NcCj9vcM9WH-HsRGJKXcrwkFhueRyurrlvRqFsGWIY7MliS1mmxqDpu0PQsIO38BjeKKduEmDeb8W3Bud-wr4woCwPmFRH_F-Z9J4q3rDAl8svApEcbJWsTFEWCaICs724Zjs0FmOUUAQew84pF_T00x" alt="Нравится" srcset="" style={{ width: "45px", height: "35px", margin: "3px 0 0 3px" }} />
                             </RightBtn>
 
                         </ContainerLikesUser>
