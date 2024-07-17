@@ -71,3 +71,5 @@ npm run start:dev
 Электронная почта для обратной связи: Nikitin-Dim@mail.ru
 
 Никитин Дмитрий, студент группы 2022-ФГиИБ-ИБ-1б
+
+![logo_tinder](./Practices/docs/ru/readmeextra/logo_tinder.png)
