@@ -4,7 +4,7 @@
 
 ![Logotype](./Practices/docs/ru/readmeextra/logo.png)
 
-Разработка велась в редакторе Visual Studo Code (version 1.91.1 OS Windows_NT x64 10.0.19045 Node.js 20.9.0).
+Разработка велась в редакторе Visual Studio Code (version 1.91.1 OS Windows_NT x64 10.0.19045 Node.js 20.9.0).
 
 Беря во внимание, что это студенческий проект, описание и тестирование продукта проходило в рамках выбранного редактора. 
 
